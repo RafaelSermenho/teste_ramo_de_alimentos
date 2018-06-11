@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Teste Dextra</string>
+    <string name="cardapio">Cardápio</string>
+    <string name="promocoes">Promoções</string>
+    <string name="carrinho_de_compras">Carrinho de Compras</string>
+    <string name="customizar">Customizar</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="no_order_yet">Ainda não existe nenhum pedido</string>
+    <string name="no_promotion_yet">Estamos sem promoções no momento! :(</string>
+    <string name="quantity">Quantidade</string>
+</resources>

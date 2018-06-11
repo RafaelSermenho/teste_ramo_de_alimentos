@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fotoIngrediente"
+        android:layout_width="@dimen/foto_ingrediente_layout_width"
+        android:layout_height="@dimen/foto_ingrediente_layout_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutDadosLanche"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dados_lanche_layout_height"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/fotoIngrediente"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dados_lanche_padding_top">
+
+        <TextView
+            android:id="@+id/nomeLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/nome_lanche_padding"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/precoLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ingredientesLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCustomizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoIngrediente"
+        android:text="@string/customizar" />
+
+    <Button
+        android:id="@+id/btnCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDadosLanche"
+        android:layout_toEndOf="@id/btnCustomizar"
+        android:text="@string/carrinho" />
+
+
+</RelativeLayout>
